@@ -62,7 +62,9 @@ git clone https://github.com/BookStackApp/BookStack.git --branch release --singl
 6. If not using Apache or if `.htaccess` files are disabled you will have to create some URL rewrite rules as shown below.
 7. Set the web root on your server to point to the BookStack `public` folder. This is done with the `root` setting on Nginx or the `DocumentRoot` setting on Apache.
 8. Run `php artisan migrate` to update the database.
-9. Done! You can now login using the default admin details `admin@admin.com` with a password of `password`. You should change these details immediately after logging in for the first time.
+9. Run `npm i` to install node modules.
+10. Run `npm run production` to build front-end assets.
+11. Done! You can now login using the default admin details `admin@admin.com` with a password of `password`. You should change these details immediately after logging in for the first time.
 
 #### URL Rewrite rules
 
